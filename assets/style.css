@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* чтобы страница занимала всю высоту */
+}
+
+/* Основные стили для формы */
+.inputs {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Выравнивание полей ввода на одной строке */
+.input-row {
+    display: flex;
+    gap: 10px; /* пространство между полями ввода */
+    margin-bottom: 15px;
+}
+
+/* Стили для каждого поля ввода */
+.input-field {
+    flex: 1; /* Растягиваем поля на всю доступную ширину */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Стили для кнопки */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    margin: 20px;
+}
+
+/* Стиль для блока с результатами */
+#result {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Стиль для каждой строки результата */
+.result-item {
+    margin-bottom: 15px;
+}
+
+/* Стиль для текста внутри каждой строки */
+.result-item p {
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Стилизация для числовых значений */
+.result-item p strong {
+    font-weight: bold;
+    color: #4CAF50; /* Зеленый для выделения числовых значений */
+}
+
+/* Добавление разделителей между результатами */
+.result-item:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+}
