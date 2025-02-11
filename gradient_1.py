@@ -28,7 +28,9 @@ def gradient_descent(start, step, eps):
         grad = grad_f(curr_point)
         history.append(curr_point.copy())
         norm_history.append(norma(grad))
-        if norma(grad) < eps:
+        if iteration_count > 2 and abs(f(history[len(history) - 2]) - f(curr_point)) < eps:
+            print(f(history[len(history) - 1]))
+            print(f(curr_point))
             break
         iteration_count += 1
         curr_point[0] -= step * grad[0]
